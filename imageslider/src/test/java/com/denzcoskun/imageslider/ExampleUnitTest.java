@@ -1,4 +1,4 @@
-package com.denzcoskun.imageslider;
+package info.epifit.imageslider;
 
 import org.junit.Test;
 

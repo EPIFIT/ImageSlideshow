@@ -1,4 +1,4 @@
-package com.denzcoskun.imageslideshow
+package info.epifit.imageslideshow
 
 import org.junit.Test
 

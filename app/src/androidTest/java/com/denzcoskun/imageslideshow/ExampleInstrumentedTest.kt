@@ -1,4 +1,4 @@
-package com.denzcoskun.imageslideshow
+package info.epifit.imageslideshow
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -22,6 +22,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("com.denzcoskun.imageslideshow", appContext.packageName)
+        assertEquals("info.epifit.imageslideshow", appContext.packageName)
     }
 }

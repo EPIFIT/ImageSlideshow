@@ -1,4 +1,4 @@
-package com.denzcoskun.imageslider.constants
+package info.epifit.imageslider.constants
 
 
 /**

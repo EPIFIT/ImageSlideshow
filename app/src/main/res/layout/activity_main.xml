@@ -8,7 +8,7 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <com.denzcoskun.imageslider.ImageSlider
+    <info.epifit.imageslider.ImageSlider
             android:id="@+id/image_slider"
             android:layout_width="wrap_content"
             android:layout_height="300dp"

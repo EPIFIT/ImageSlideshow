@@ -1,4 +1,4 @@
-package com.denzcoskun.imageslider
+package info.epifit.imageslider
 
 import android.content.Context
 import android.os.Handler
@@ -11,13 +11,13 @@ import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import androidx.core.content.ContextCompat
 import androidx.viewpager.widget.ViewPager
-import com.denzcoskun.imageslider.adapters.ViewPagerAdapter
-import com.denzcoskun.imageslider.constants.ActionTypes
-import com.denzcoskun.imageslider.constants.ScaleTypes
-import com.denzcoskun.imageslider.interfaces.ItemChangeListener
-import com.denzcoskun.imageslider.interfaces.ItemClickListener
-import com.denzcoskun.imageslider.interfaces.TouchListener
-import com.denzcoskun.imageslider.models.SlideModel
+import info.epifit.imageslider.adapters.ViewPagerAdapter
+import info.epifit.imageslider.constants.ActionTypes
+import info.epifit.imageslider.constants.ScaleTypes
+import info.epifit.imageslider.interfaces.ItemChangeListener
+import info.epifit.imageslider.interfaces.ItemClickListener
+import info.epifit.imageslider.interfaces.TouchListener
+import info.epifit.imageslider.models.SlideModel
 import java.util.*
 
 /**

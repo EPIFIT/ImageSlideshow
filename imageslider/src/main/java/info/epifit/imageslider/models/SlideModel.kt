@@ -1,6 +1,6 @@
-package com.denzcoskun.imageslider.models
+package info.epifit.imageslider.models
 
-import com.denzcoskun.imageslider.constants.ScaleTypes
+import info.epifit.imageslider.constants.ScaleTypes
 
 /**
  * Created by Deniz Coşkun on 6/23/2020.

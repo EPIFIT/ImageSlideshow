@@ -1,4 +1,4 @@
-package com.denzcoskun.imageslider;
+package info.epifit.imageslider;
 
 import android.content.Context;
 import androidx.test.platform.app.InstrumentationRegistry;
@@ -19,8 +19,8 @@ public class ExampleInstrumentedTest {
     @Test
     public void useAppContext() {
         // Context of the app under test.
-        Context appContext = InstrumentationRegistry.getTargetContext();
+        Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.denzcoskun.imageslider.test", appContext.getPackageName());
+        assertEquals("info.epifit.imageslider.test", appContext.getPackageName());
     }
 }

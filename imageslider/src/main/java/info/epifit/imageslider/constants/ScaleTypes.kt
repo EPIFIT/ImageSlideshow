@@ -1,4 +1,4 @@
-package com.denzcoskun.imageslider.constants
+package info.epifit.imageslider.constants
 
 /**
  * Created by Deniz Coşkun on 6/23/2020.

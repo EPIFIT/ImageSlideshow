@@ -1,13 +1,13 @@
 <img src="https://user-images.githubusercontent.com/15522554/54867096-7169d700-4d8d-11e9-8f9a-bee162a01427.png">
 <a href="https://github.com/Ramotion/cardslider-android">
 <img align="left" src="https://user-images.githubusercontent.com/15522554/85434507-d3b41780-b58e-11ea-9386-42741f0921ae.gif"/></a>
-<p><h1 align="left">Android Image Slide</h1></p>
+<h1 align="left">Android Image Slide</h1>
 <p>This is an android image slider library. Just add the images you want to view. </p>
 <p>You can use automatic scrolling for the time you set.  </p>
 <p>You can also add the title you want to the images.</p>
 <p>You can set corner radius images.</p>
 <p>You can use with Java or Kotlin.</p>
-</br></br>
+<br/>
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-ImageSlideshow-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/7587)
 [![license](https://img.shields.io/github/license/denzcoskun/imageslideshow.svg?style=popout)](https://opensource.org/licenses/Apache-2.0)
@@ -19,7 +19,7 @@
 -   Add ImageSlider to your **layout**
 
 ```xml
-<com.denzcoskun.imageslider.ImageSlider
+<info.epifit.imageslider.ImageSlider
         android:id="@+id/image_slider"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -68,7 +68,7 @@ imageSlider.setImageList(imageList)
 <img src="https://user-images.githubusercontent.com/15522554/85434498-d0209080-b58e-11ea-83cc-ce79076391c1.jpg">
 
 ```kt
-import com.denzcoskun.imageslider.constants.ScaleTypes // important
+import info.epifit.imageslider.constants.ScaleTypes // important
 
 // FIT, CENTER_CROP or CENTER_INSIDE
 

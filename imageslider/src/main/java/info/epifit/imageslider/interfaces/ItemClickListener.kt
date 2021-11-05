@@ -1,4 +1,4 @@
-package com.denzcoskun.imageslider.interfaces
+package info.epifit.imageslider.interfaces
 /**
  * Created by Name name on 6/23/2020.
  * denzcoskun@hotmail.com

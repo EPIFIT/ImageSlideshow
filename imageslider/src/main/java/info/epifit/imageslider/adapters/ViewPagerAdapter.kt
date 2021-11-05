@@ -1,4 +1,4 @@
-package com.denzcoskun.imageslider.adapters
+package info.epifit.imageslider.adapters
 
 import android.content.Context
 import android.view.*
@@ -7,14 +7,14 @@ import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.viewpager.widget.PagerAdapter
-import com.denzcoskun.imageslider.R
-import com.denzcoskun.imageslider.constants.ActionTypes
-import com.denzcoskun.imageslider.constants.ScaleTypes
-import com.denzcoskun.imageslider.interfaces.ItemChangeListener
-import com.denzcoskun.imageslider.interfaces.ItemClickListener
-import com.denzcoskun.imageslider.interfaces.TouchListener
-import com.denzcoskun.imageslider.models.SlideModel
-import com.denzcoskun.imageslider.transformation.RoundedTransformation
+import info.epifit.imageslider.R
+import info.epifit.imageslider.constants.ActionTypes
+import info.epifit.imageslider.constants.ScaleTypes
+import info.epifit.imageslider.interfaces.ItemChangeListener
+import info.epifit.imageslider.interfaces.ItemClickListener
+import info.epifit.imageslider.interfaces.TouchListener
+import info.epifit.imageslider.models.SlideModel
+import info.epifit.imageslider.transformation.RoundedTransformation
 import com.squareup.picasso.Picasso
 
 /**

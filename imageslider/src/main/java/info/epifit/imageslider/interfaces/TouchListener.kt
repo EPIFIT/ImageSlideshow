@@ -1,6 +1,6 @@
-package com.denzcoskun.imageslider.interfaces
+package info.epifit.imageslider.interfaces
 
-import com.denzcoskun.imageslider.constants.ActionTypes
+import info.epifit.imageslider.constants.ActionTypes
 
 
 /**

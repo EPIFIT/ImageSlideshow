@@ -1,16 +1,16 @@
-package com.denzcoskun.imageslideshow
+package info.epifit.imageslideshow
 
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.denzcoskun.imageslider.ImageSlider
-import com.denzcoskun.imageslider.constants.ActionTypes
-import com.denzcoskun.imageslider.constants.ScaleTypes
-import com.denzcoskun.imageslider.interfaces.ItemChangeListener
-import com.denzcoskun.imageslider.interfaces.ItemClickListener
-import com.denzcoskun.imageslider.interfaces.TouchListener
-import com.denzcoskun.imageslider.models.SlideModel
+import info.epifit.imageslider.ImageSlider
+import info.epifit.imageslider.constants.ActionTypes
+import info.epifit.imageslider.constants.ScaleTypes
+import info.epifit.imageslider.interfaces.ItemChangeListener
+import info.epifit.imageslider.interfaces.ItemClickListener
+import info.epifit.imageslider.interfaces.TouchListener
+import info.epifit.imageslider.models.SlideModel
 
 /**
  * Created by Deniz Coşkun on 6/23/2020.

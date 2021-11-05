@@ -1,4 +1,4 @@
-package com.denzcoskun.imageslider.transformation
+package info.epifit.imageslider.transformation
 
 import android.graphics.*
 import com.squareup.picasso.Transformation
