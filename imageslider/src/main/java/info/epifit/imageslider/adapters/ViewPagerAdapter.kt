@@ -1,5 +1,6 @@
 package info.epifit.imageslider.adapters
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.*
 import android.widget.ImageView
@@ -48,6 +49,7 @@ class ViewPagerAdapter(context: Context?,
         return imageList!!.size
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     override fun instantiateItem(container: ViewGroup, position: Int): View{
         val itemView = layoutInflater!!.inflate(R.layout.pager_row, container, false)
 
@@ -99,7 +101,6 @@ class ViewPagerAdapter(context: Context?,
                 false
             }
         }
-
 
         return itemView
     }

@@ -1,5 +1,6 @@
 package info.epifit.imageslider
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Handler
 import android.util.AttributeSet
@@ -25,6 +26,7 @@ import java.util.*
  * denzcoskun@hotmail.com
  * İstanbul
  */
+@SuppressLint("ClickableViewAccessibility")
 class ImageSlider @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
@@ -81,15 +83,15 @@ class ImageSlider @JvmOverloads constructor(
         titleBackground = typedArray.getResourceId(R.styleable.ImageSlider_iss_title_background, R.drawable.gradient)
 
         if (typedArray.getString(R.styleable.ImageSlider_iss_text_align) != null){
-            textAlign = typedArray.getString(R.styleable.ImageSlider_iss_text_align)
+            textAlign = typedArray.getString(R.styleable.ImageSlider_iss_text_align)!!
         }
 
         if (typedArray.getString(R.styleable.ImageSlider_iss_indicator_align) != null){
-            indicatorAlign = typedArray.getString(R.styleable.ImageSlider_iss_indicator_align)
+            indicatorAlign = typedArray.getString(R.styleable.ImageSlider_iss_indicator_align)!!
         }
 
         if (touchListener != null){
-            viewPager!!.setOnTouchListener { v, event ->
+            viewPager!!.setOnTouchListener { _, event ->
                 when (event.action) {
                     MotionEvent.ACTION_MOVE -> touchListener!!.onTouched(ActionTypes.MOVE)
                     MotionEvent.ACTION_DOWN -> touchListener!!.onTouched(ActionTypes.DOWN)
@@ -98,7 +100,6 @@ class ImageSlider @JvmOverloads constructor(
                 false
             }
         }
-
     }
 
     /**
@@ -245,7 +246,7 @@ class ImageSlider @JvmOverloads constructor(
     /**
      * Get layout gravity value from indicatorAlign variable
      *
-     * @param  indicatorAlign  indicator align by user
+     * @param  textAlign  text align by user
      */
     fun getGravityFromAlign(textAlign: String): Int {
         return when (textAlign) {
@@ -260,7 +261,6 @@ class ImageSlider @JvmOverloads constructor(
             }
         }
     }
-
 }
 
 
