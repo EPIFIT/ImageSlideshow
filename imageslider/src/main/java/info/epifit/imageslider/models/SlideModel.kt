@@ -13,6 +13,7 @@ class SlideModel {
     var imagePath: Int? = 0
     var title: String? = null
     var scaleType: ScaleTypes? = null
+    var like: Boolean = false
 
     constructor(imageUrl: String?, title: String? = null, scaleType: ScaleTypes?  = null) {
         this.imageUrl = imageUrl
@@ -35,5 +36,4 @@ class SlideModel {
         this.imagePath = imagePath
         this.scaleType = scaleType
     }
-
 }

@@ -8,15 +8,14 @@ import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.viewpager.widget.PagerAdapter
+import com.squareup.picasso.Picasso
 import info.epifit.imageslider.R
 import info.epifit.imageslider.constants.ActionTypes
 import info.epifit.imageslider.constants.ScaleTypes
-import info.epifit.imageslider.interfaces.ItemChangeListener
 import info.epifit.imageslider.interfaces.ItemClickListener
 import info.epifit.imageslider.interfaces.TouchListener
 import info.epifit.imageslider.models.SlideModel
 import info.epifit.imageslider.transformation.RoundedTransformation
-import com.squareup.picasso.Picasso
 
 /**
  * Created by Deniz Coşkun on 6/23/2020.
@@ -35,7 +34,7 @@ class ViewPagerAdapter(context: Context?,
     constructor(context: Context, imageList: List<SlideModel>, radius: Int, errorImage: Int, placeholder: Int, titleBackground: Int, textAlign: String) :
             this(context, imageList, radius, errorImage, placeholder, titleBackground, null, textAlign)
 
-    private var imageList: List<SlideModel>? = imageList
+    var imageList: List<SlideModel>? = imageList
     private var layoutInflater: LayoutInflater? = context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater?
 
     private var itemClickListener: ItemClickListener? = null
@@ -56,6 +55,13 @@ class ViewPagerAdapter(context: Context?,
         val imageView = itemView.findViewById<ImageView>(R.id.image_view)
         val linearLayout = itemView.findViewById<LinearLayout>(R.id.linear_layout)
         val textView = itemView.findViewById<TextView>(R.id.text_view)
+        val likeView = itemView.findViewById<ImageView>(R.id.like_view)
+
+        if (imageList!![position].like){
+            likeView.setImageResource(R.drawable.ic_heart_sel)
+        }else{
+            likeView.setImageResource(R.drawable.ic_heart_unsel)
+        }
 
         if (imageList!![position].title != null){
             textView.text = imageList!![position].title
@@ -105,6 +111,15 @@ class ViewPagerAdapter(context: Context?,
         return itemView
     }
 
+    fun like(position: Int){
+        imageList?.forEach { it.like = false }
+        imageList?.get(position)?.like = true
+    }
+
+    override fun getItemPosition(`object`: Any): Int {
+        return POSITION_NONE
+    }
+
     /**
      * Get layout gravity value from textAlign variable
      *
@@ -145,5 +160,4 @@ class ViewPagerAdapter(context: Context?,
     override fun destroyItem(container: ViewGroup, position: Int, `object`: Any) {
         container.removeView(`object` as RelativeLayout)
     }
-
 }

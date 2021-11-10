@@ -27,15 +27,15 @@ class MainActivity : AppCompatActivity() {
         val imageSlider = findViewById<ImageSlider>(R.id.image_slider) // init imageSlider
 
         val imageList = ArrayList<SlideModel>() // Create image list
-        imageList.add(SlideModel("https://bit.ly/37Rn50u", "Baby Owl",ScaleTypes.CENTER_CROP))
-        imageList.add(SlideModel("https://bit.ly/2BteuF2", "Elephants and tigers may become extinct."))
-        imageList.add(SlideModel("https://bit.ly/3fLJf72", "The population of elephants is decreasing in the world."))
+        imageList.add(SlideModel("https://bit.ly/37Rn50u", ScaleTypes.CENTER_CROP))
+        imageList.add(SlideModel("https://bit.ly/2BteuF2"))
+        imageList.add(SlideModel("https://bit.ly/3fLJf72"))
 
         imageSlider.setImageList(imageList)
 
         imageSlider.setItemClickListener(object : ItemClickListener {
             override fun onItemSelected(position: Int) {
-                // You can listen here.
+                imageSlider.like(position)
             }
         })
 
@@ -48,12 +48,11 @@ class MainActivity : AppCompatActivity() {
         imageSlider.setTouchListener(object : TouchListener {
             override fun onTouched(touched: ActionTypes) {
                 if (touched == ActionTypes.DOWN){
-                    imageSlider.stopSliding()
+                    //imageSlider.stopSliding()
                 } else if (touched == ActionTypes.UP ) {
-                   imageSlider.startSliding(1000)
+                   //imageSlider.startSliding(1000)
                 }
             }
         })
     }
-
 }

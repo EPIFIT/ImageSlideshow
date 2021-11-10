@@ -179,6 +179,11 @@ class ImageSlider @JvmOverloads constructor(
 
     }
 
+    fun like(position: Int){
+        viewPagerAdapter?.like(position)
+        viewPagerAdapter?.notifyDataSetChanged()
+    }
+
     /**
      * Start image sliding.
      *
